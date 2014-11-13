@@ -62,5 +62,5 @@ mount --bind /run/resolvconf/resolv.conf /etc/resolv.conf
 docker -d &
 sleep 5
 
-# Use docker
+# compile kernel
 docker run jcai/nirvana-kernel sh /compile.sh
