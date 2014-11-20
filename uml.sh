@@ -59,9 +59,9 @@ echo 'nameserver 8.8.8.8' > /run/resolvconf/resolv.conf
 mount --bind /run/resolvconf/resolv.conf /etc/resolv.conf
 
 # Start docker daemon
-docker -d &
+docker -d --insecure-registry docker.cn &
 sleep 5
 
 #df -h 
 # compile kernel
-docker run --insecure-registry docker.cn docker.cn/jcai/nirvana-docker sh /compile.sh
+docker run   docker.cn/jcai/nirvana-docker sh /compile.sh
