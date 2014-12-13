@@ -64,4 +64,4 @@ sleep 5
 
 #df -h 
 # compile kernel
-docker run   jcai/nirvana-kernel sh /compile.sh
+docker run   jcai/nirvana-kernel sh /kernel.sh
