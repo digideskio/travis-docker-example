@@ -3,7 +3,6 @@
 # Exit on first error
 set -e
 
-
 save_and_shutdown() {
   # save built for host result
   # force clean shutdown
@@ -60,7 +59,7 @@ mount --bind /run/resolvconf/resolv.conf /etc/resolv.conf
 
 # Start docker daemon
 docker -d --insecure-registry docker.cn &
-sleep 5
+sleep 6
 
 #df -h 
 # compile kernel
